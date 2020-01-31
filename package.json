@@ -4,7 +4,9 @@
   "description": "## Project Name Dynamic API",
   "main": "index.js",
   "scripts": {
-    "test": "jest --verbose --coverage"
+    "test": "jest --verbose --coverage",
+    "lint": "eslint '**/*.js' "
+
   },
   "repository": {
     "type": "git",
