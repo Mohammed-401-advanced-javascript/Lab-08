@@ -1,0 +1,29 @@
+{
+  "name": "Lab-08",
+  "version": "1.0.0",
+  "description": "## Project Name Dynamic API",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohammed-401-advanced-javascript/Lab-08.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mohammed-401-advanced-javascript/Lab-08/issues"
+  },
+  "homepage": "https://github.com/Mohammed-401-advanced-javascript/Lab-08#readme",
+  "dependencies": {
+    "@code-fellows/supergoose": "^1.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jest": "^25.1.0",
+    "mongoose": "^5.8.10",
+    "morgan": "^1.9.1"
+  }
+}
