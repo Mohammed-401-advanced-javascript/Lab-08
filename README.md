@@ -7,8 +7,8 @@ Dynamic API
 
 ### Links and Resources
 
-- [submission PR]()
-- [ci/cd](http://xyz.com) (GitHub Actions)
+- [submission PR](https://github.com/Mohammed-401-advanced-javascript/Lab-08/pull/1)
+- [ci/cd](https://github.com/Mohammed-401-advanced-javascript/Lab-08/actions) (GitHub Actions)
 - [back-end server url](http://xyz.com) (when applicable)
 - [front-end application](http://xyz.com) (when applicable)
 
