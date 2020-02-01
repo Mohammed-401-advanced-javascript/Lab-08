@@ -1,3 +1,5 @@
+/* eslint-disable new-cap */
+// eslint-disable-next-line strict
 'use strict';
 
 const schema = require('./products-schema.js');

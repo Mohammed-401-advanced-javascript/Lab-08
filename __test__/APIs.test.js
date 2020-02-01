@@ -1,3 +1,6 @@
+/* eslint-disable camelcase */
+/* eslint-disable no-undefined */
+// eslint-disable-next-line strict
 'use strict';
 
 const {server} = require('../lib/server.js');
@@ -25,7 +28,7 @@ describe('Categories API', () => {
             expect(data.status).toBe(200);
             expect(data.body[0].name).toEqual('Ayman');
           });
-        
+
       });
 
   });
@@ -94,7 +97,7 @@ describe('Products API', () => {
         expect(data.status).toBe(200);
       });
   });
-  
+
   it('get with id works' , ()=> {
     let newVal = { name: 'Ayman' , price : 99 , weight : 85 , quantity_in_stock : 1};
     return mockRequest.post('/api/v1/products')
@@ -106,12 +109,12 @@ describe('Products API', () => {
             expect(data.status).toBe(200);
             expect(data.body[0].name).toEqual('Ayman');
           });
-          
+
       });
-  
+
   });
-  
-  
+
+
   it('post works' , ()=> {
     let newVal = { name: 'Ayman' , price : 99 , weight : 85 , quantity_in_stock : 1};
     return mockRequest.post('/api/v1/products')
@@ -122,16 +125,16 @@ describe('Products API', () => {
         });
       });
   });
-  
-  
+
+
   it('update works' , ()=> {
     let newVal = { name: 'Ayman' , price : 99 , weight : 85 , quantity_in_stock : 1};
     let updated = { name: 'Nero' , price : 0 , weight : 0 , quantity_in_stock : 99};
-  
+
     return mockRequest.post('/api/v1/products')
       .send(newVal)
       .then(data => {
-  
+
         return mockRequest.put(`/api/v1/products/${data.body._id}`)
           .send(updated)
           .then(data => {
@@ -140,9 +143,9 @@ describe('Products API', () => {
           });
       });
   });
-  
-  
-  
+
+
+
   it('delete works' , ()=> {
     let newVal = { name: 'Ayman' , price : 99 , weight : 85 , quantity_in_stock : 1};
     return mockRequest.post('/api/v1/products')
@@ -154,13 +157,13 @@ describe('Products API', () => {
               .then(data => {
                 expect(data.status).toBe(200);
                 expect(data.body[0]).toBe(undefined);
-  
+
               });
           });
       });
-  
-  
+
+
   });
-  
-  
+
+
 }) ;

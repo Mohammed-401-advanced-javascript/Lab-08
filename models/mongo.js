@@ -1,3 +1,5 @@
+/* eslint-disable new-cap */
+// eslint-disable-next-line strict
 'use strict';
 
 
@@ -7,7 +9,7 @@ class Mongo {
     this.schema = schema ;
   }
 
-  
+
   create(value){
     let newValue = new this.schema(value);
     return newValue.save() ;
@@ -32,4 +34,4 @@ class Mongo {
 }
 
 
-module.exports= Mongo ;
+module.exports = Mongo ;
